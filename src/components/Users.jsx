@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import axios from "axios"
+import StateManagement from './StateManagement';
 
 const Users = () => {
     const [users, setUsers] = useState([]);
@@ -61,7 +62,7 @@ const Users = () => {
             <li key={user.id}>{user.name}</li>
         ))}
 
-      
+      <StateManagement />
     </div>
   )
 }
